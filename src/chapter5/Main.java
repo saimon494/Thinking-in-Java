@@ -1,9 +1,12 @@
 package chapter5;
 
+import static java.lang.System.out;
 
 public class Main {
 
     public static void main(String[] args) {
+//        out.println("Inside main()"); // 13
+//        Cups.cup1.f(99);
 
 
 //        Book novel = new Book(true);  // 11
@@ -19,7 +22,35 @@ public class Main {
 //        dog.bark("bark",4);
 //        dog.bark(3, "yelp");
     }
+
+//    static Cups cups1 = new Cups(); // 13
+//    static Cups cups2 = new Cups();
 }
+
+// 13, 14 - static block
+//class Cup {
+//    Cup(int marker) {
+//        out.println("Cup(" + marker + ")");
+//    }
+//
+//    void f(int marker) {
+//        out.println("f(" + marker + ")");
+//    }
+//}
+//
+//class Cups {
+//    static Cup cup1;
+//    static Cup cup2;
+//
+//    static {
+//        cup1 = new Cup(1);
+//        cup2 = new Cup(2);
+//    }
+//
+//    Cups() {
+//        out.println("Cups()");
+//    }
+//}
 
 // 11, 12 - finalize()
 //class Book {
