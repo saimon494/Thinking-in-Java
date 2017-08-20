@@ -1,14 +1,34 @@
 package chapter5;
 
+import java.util.Arrays;
+import java.util.Random;
+
 import static java.lang.System.out;
 
 public class Main {
 
     public static void main(String[] args) {
+
+
+
+//        Test t = new Test("String"); // 17,18
+//        Test[] arr = new Test[]{
+//                new Test("a"),
+//                new Test("b"),
+//        };
+
+//        String s1 = "string 1"; // 16
+//        String s2 = "string 2";
+//        String[] stringArray = new String[2];
+//        stringArray[0] = s1;
+//        stringArray[1] = s2;
+//
+//        for (int i = 0; i < stringArray.length; i++) {
+//            System.out.println(stringArray[i]);
+//        }
+
 //        out.println("Inside main()"); // 13
 //        Cups.cup1.f(99);
-
-
 //        Book novel = new Book(true);  // 11
 //        novel.checkIn();
 //        new Book(true);
@@ -26,6 +46,24 @@ public class Main {
 //    static Cups cups1 = new Cups(); // 13
 //    static Cups cups2 = new Cups();
 }
+
+
+// 17, 18 - array initialization with objects
+//class Test {
+//    public String s;
+//
+//    Test(String s) {
+//        this.s = s;
+//        System.out.println(s);
+//    }
+//}
+
+// 15 - initialization block
+//{
+//    mug1 = new Mug(1);
+//    mug2 = new Mug(2);
+//    out.print("mug1 & mug2 initialised")
+//}
 
 // 13, 14 - static block
 //class Cup {
