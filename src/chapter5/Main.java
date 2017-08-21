@@ -1,5 +1,7 @@
 package chapter5;
 
+import com.sun.org.apache.xpath.internal.SourceTree;
+
 import java.util.Arrays;
 import java.util.Random;
 
@@ -7,9 +9,23 @@ import static java.lang.System.out;
 
 public class Main {
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
 
+
+//    public static void main(String... args) { //20
+//        Run -> Edit Config -> Program arguments
+//        for (String s : args) {
+//            System.out.print(s + " ");
+//            System.out.println();
+//        }
+//        System.out.println(args.getClass());
+//        System.out.println("length:" + args.length);
+//        System.out.println(args);
+
+//        varArgs("ab, c"); // 19
+//        varArgs("Hello", "Java");
+//        varArgs(new String[]{"Wazzup", "Man"});
 
 //        Test t = new Test("String"); // 17,18
 //        Test[] arr = new Test[]{
@@ -43,10 +59,17 @@ public class Main {
 //        dog.bark(3, "yelp");
     }
 
+// 19 - - variable-length arguments - varargs
+//    static void varArgs(String... v) {
+//        System.out.print("Number og arguments: " + v.length + ", Content: ");
+//        for (String s : v) {
+//            System.out.print(s + " ");
+//            System.out.println();
+//        }
+//    }
+
 //    static Cups cups1 = new Cups(); // 13
 //    static Cups cups2 = new Cups();
-}
-
 
 // 17, 18 - array initialization with objects
 //class Test {
@@ -171,5 +194,5 @@ public class Main {
 //    public Test(String newField) {
 //        newField = " ";
 //    }
-//}
+}
 
