@@ -6,13 +6,57 @@ import java.util.Arrays;
 import java.util.Random;
 
 import static java.lang.System.out;
+import static java.lang.System.setOut;
 
 public class Main {
 
-        public static void main(String[] args) {
+// 21 - enum
+    public enum Money {
+        USA, RUB, EUR, JPY
+    }
+// 22 - enum with switch
+    Money option;
+
+    public Main(Money option) {
+        this.option = option;
+    }
+
+    public void describe() {
+        System.out.print("This money is from ");
+        switch (option) {
+            case USA:
+                System.out.println("United States");
+                break;
+            case RUB:
+                System.out.println("Russia");
+                break;
+            case EUR:
+                System.out.println("Europe");
+                break;
+            case JPY:
+                System.out.println("Japan");
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        Main
+                u = new Main(Money.USA),
+                r = new Main(Money.RUB),
+                e = new Main(Money.EUR),
+                j = new Main(Money.JPY);
+
+        u.describe();
+        r.describe();
+        e.describe();
+        j.describe();
 
 
 
+//        for (Money m : Money.values()) { // 21
+//            System.out.println(m + ", ordinal " + m.ordinal());
+//        }
 //    public static void main(String... args) { //20
 //        Run -> Edit Config -> Program arguments
 //        for (String s : args) {
@@ -58,6 +102,7 @@ public class Main {
 //        dog.bark("bark",4);
 //        dog.bark(3, "yelp");
     }
+
 
 // 19 - - variable-length arguments - varargs
 //    static void varArgs(String... v) {
