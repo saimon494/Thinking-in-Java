@@ -1,14 +1,10 @@
 package chapter5;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
-
-import java.util.Arrays;
-import java.util.Random;
-
-import static java.lang.System.out;
-import static java.lang.System.setOut;
+import chapter6.*;
 
 public class Main {
+
+   MyClass myClass = new MyClass(); // 1 - chapter6
 
 // 21 - enum
     public enum Money {
