@@ -2,7 +2,12 @@ package chapter8;
 
 public class Unicycle extends Cycle{
 
-    public void ride() {
-        System.out.println("Unicycle is riding");
+    @Override
+    public void ride(String name) {
+        super.ride(name);
+    }
+    @Override
+    public int wheels() {
+        return super.wheels();
     }
 }

@@ -2,7 +2,15 @@ package chapter8;
 
 // 1 - Ascending transformation
 public class Cycle {
-    public static void ride(Cycle vehicle){
-        System.out.println("It`s riding");
+    private String name;
+    public static int numberOfWheels;
+    public void ride(String name){
+        System.out.println(name + " is riding on " + wheels() + " wheels");
     }
+
+    public int wheels() {
+        return numberOfWheels;
+    }
+
+
 }

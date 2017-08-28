@@ -1,10 +1,15 @@
 package chapter8;
 
 public class Bicycle extends Cycle {
+    int numberOfWheels = 2;
 
-    public void ride() {
-        System.out.println("Bicycle is riding");
+    @Override
+    public void ride(String name) {
+        super.ride(name);
     }
 
-
+    @Override
+    public int wheels() {
+        return super.wheels();
+    }
 }
