@@ -6,7 +6,7 @@ class Tasks {
 
 // 18 - factory for cycle, todo
 // 19 - factory, todo
-
+// 11 - todo
 // 7 - interface Rodent, todo
 
 // 2 - abstract class can`t be instantiated
